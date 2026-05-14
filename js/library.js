@@ -226,6 +226,56 @@
         notifyChange();
     }
 
+    /**
+     * Fetch a starter pack JSON from the songs/ folder and merge it into the
+     * user library. Returns the number of songs added (skipping duplicates by id).
+     */
+    function importPack(filename) {
+        return fetch('songs/' + filename, { cache: 'no-cache' })
+            .then(function (res) {
+                if (!res.ok) throw new Error('Could not load pack: ' + filename);
+                return res.json();
+            })
+            .then(function (parsed) {
+                var incoming = Array.isArray(parsed) ? parsed
+                    : Array.isArray(parsed.songs) ? parsed.songs
+                    : null;
+                if (!incoming) throw new Error('Pack has no songs.');
+                var existing = readUserSongs();
+                var existingIds = {};
+                existing.forEach(function (s) { existingIds[s.id] = true; });
+                var added = 0;
+                incoming.forEach(function (s) {
+                    if (!s || !s.title || existingIds[s.id]) return;
+                    existing.push({
+                        id: s.id || generateId(),
+                        title: String(s.title),
+                        artist: String(s.artist || 'Unknown'),
+                        genre: String(s.genre || 'other').toLowerCase(),
+                        chords: String(s.chords || ''),
+                        lyrics: String(s.lyrics || ''),
+                        youtube: String(s.youtube || ''),
+                        license: String(s.license || ''),
+                        sample: false,
+                        createdAt: s.createdAt || Date.now()
+                    });
+                    added++;
+                });
+                writeUserSongs(existing);
+                return added;
+            });
+    }
+
+    // Built-in catalog of starter packs. Add to this when you ship a new JSON file
+    // in the songs/ folder.
+    var STARTER_PACKS = [
+        { file: 'campfire-classics.json', name: 'Campfire Classics', description: '8 traditional campfire songs everyone knows. Three-chord-friendly.' },
+        { file: 'blues-101.json',          name: 'Blues 101',          description: '6 foundational blues and early jazz numbers. 12-bar form practice.' },
+        { file: 'holiday-classics.json',   name: 'Holiday Classics',   description: '6 traditional Christmas carols. Great for group singing.' }
+    ];
+
+    function getStarterPacks() { return STARTER_PACKS.slice(); }
+
     function onChange(cb) {
         if (typeof cb !== 'function') return function () {};
         listeners.push(cb);
@@ -253,6 +303,8 @@
         areSamplesHidden: areSamplesHidden,
         setSamplesHidden: setSamplesHidden,
         isSampleSong: isSampleSong,
+        importPack: importPack,
+        getStarterPacks: getStarterPacks,
         onChange: onChange
     };
 })();

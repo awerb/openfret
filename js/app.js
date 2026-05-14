@@ -689,8 +689,14 @@
             if (songs.length === 0) {
                 songListEl.innerHTML = `
                     <div class="empty-state">
+                        <img src="assets/openfret-icon.png" alt="" class="empty-state-icon">
                         <h3>Your songbook is empty.</h3>
-                        <p>Tap <button class="welcome-link" onclick="showAddSongModal()">+ Add Song</button> to add your first song, or open <button class="welcome-link" onclick="showLibraryMenu()">Library</button> to import from a file.</p>
+                        <p>Tap <strong>+ Add Song</strong> to drop in your first chord sheet, browse a starter pack to get going fast, or import a library you've exported from another device.</p>
+                        <div class="empty-state-actions">
+                            <button class="control-btn primary" onclick="showAddSongModal()">+ ADD YOUR FIRST SONG</button>
+                            <button class="control-btn" onclick="showLibraryMenu()">BROWSE STARTER PACKS</button>
+                        </div>
+                        <p class="empty-state-hint">Or <button class="welcome-link" onclick="OpenFretApp.unhideSamplesAndRefresh()">show the 10 sample songs</button> to see what's possible.</p>
                     </div>`;
                 return;
             }
@@ -982,11 +988,28 @@
 
         function showLibraryMenu() {
             refreshLibraryStats();
+            renderStarterPacks();
             const toggleBtn = document.getElementById('toggleSamplesBtn');
             if (toggleBtn && window.OpenFretLibrary) {
                 toggleBtn.textContent = window.OpenFretLibrary.areSamplesHidden() ? 'SHOW SAMPLE SONGS' : 'HIDE SAMPLE SONGS';
             }
             document.getElementById('libraryModal').style.display = 'flex';
+        }
+
+        function renderStarterPacks() {
+            const list = document.getElementById('packList');
+            if (!list || !window.OpenFretLibrary) return;
+            const packs = window.OpenFretLibrary.getStarterPacks();
+            list.innerHTML = packs.map(function (p) {
+                return `
+                    <div class="of-pack">
+                        <div class="of-pack-info">
+                            <div class="of-pack-name">${escapeHtml(p.name)}</div>
+                            <div class="of-pack-desc">${escapeHtml(p.description)}</div>
+                        </div>
+                        <button class="control-btn" onclick="OpenFretApp.importStarterPack('${escapeHtml(p.file)}', this)">IMPORT</button>
+                    </div>`;
+            }).join('');
         }
 
         function closeLibraryMenu() {
@@ -1034,6 +1057,29 @@
                 window.OpenFretLibrary.setSamplesHidden(next);
                 const toggleBtn = document.getElementById('toggleSamplesBtn');
                 if (toggleBtn) toggleBtn.textContent = next ? 'SHOW SAMPLE SONGS' : 'HIDE SAMPLE SONGS';
+            },
+            unhideSamplesAndRefresh: function () {
+                if (!window.OpenFretLibrary) return;
+                window.OpenFretLibrary.setSamplesHidden(false);
+            },
+            importStarterPack: function (filename, btn) {
+                if (!window.OpenFretLibrary) return;
+                const original = btn ? btn.textContent : null;
+                if (btn) { btn.textContent = 'IMPORTING...'; btn.disabled = true; }
+                window.OpenFretLibrary.importPack(filename)
+                    .then(function (added) {
+                        if (added === 0) {
+                            alert('That pack is already in your library.');
+                        } else {
+                            alert('Imported ' + added + ' song' + (added === 1 ? '' : 's') + ' from the pack.');
+                        }
+                    })
+                    .catch(function (err) {
+                        alert('Could not import pack: ' + err.message);
+                    })
+                    .then(function () {
+                        if (btn) { btn.textContent = original; btn.disabled = false; }
+                    });
             },
             confirmReset: function () {
                 OpenFretApp.openConfirm(

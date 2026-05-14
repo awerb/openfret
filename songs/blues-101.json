@@ -1,0 +1,74 @@
+{
+  "app": "OpenFret",
+  "version": 1,
+  "name": "Blues 101",
+  "description": "6 foundational blues and early jazz numbers, all public domain. Perfect for learning the 12-bar form and dominant 7th voicings.",
+  "songs": [
+    {
+      "id": "pack-blues-frankie-johnny",
+      "title": "Frankie and Johnny",
+      "artist": "Traditional",
+      "genre": "blues",
+      "chords": "C C7 F G7",
+      "lyrics": "[C]Frankie and Johnny were [E7]lovers,\n[F]Oh, lordy, how they could [C]love.\n[C]They swore to be true to each [E7]other,\n[F]True as the stars a[C]bove.\nHe was her [G7]man, but he done her [C]wrong.\n\n[C]Frankie went down to the [E7]corner,\n[F]Just for a bucket of [C]beer.\n[C]She said, \"Mister bartender,\n[E7]Has my loving Johnny been [F]here?\nHe is my [G7]man, but he's doing me [C]wrong.\"",
+      "youtube": "https://www.youtube.com/results?search_query=frankie+and+johnny+blues+guitar",
+      "license": "Public Domain (traditional, by 1904)",
+      "sample": false
+    },
+    {
+      "id": "pack-blues-stagger-lee",
+      "title": "Stagger Lee",
+      "artist": "Traditional",
+      "genre": "blues",
+      "chords": "G C D7",
+      "lyrics": "It was [G]back in '32 when times were [C]hard,\n[G]Had a sawed-off shotgun and a [D7]crooked deck of cards.\nWore a [G]Stetson hat and a [C]black suit coat,\nAnd a [G]chain made of [D7]gold around his [G]throat.\n\n[G]Stagger Lee, Stagger Lee, what a [C]bad bad man,\n[G]Stagger Lee was a friend of [D7]mine.\n[G]Shot poor Billy DeLyon for a [C]Stetson hat,\n[G]Now Billy [D7]ain't gonna [G]be back.",
+      "youtube": "https://www.youtube.com/results?search_query=stagger+lee+blues+guitar",
+      "license": "Public Domain (traditional, 1895)",
+      "sample": false
+    },
+    {
+      "id": "pack-blues-careless-love",
+      "title": "Careless Love",
+      "artist": "Traditional",
+      "genre": "blues",
+      "chords": "G G7 C D7",
+      "lyrics": "[G]Love, oh love, oh [G7]careless love,\n[C]Love, oh love, oh [G]careless love,\n[G]Love, oh love, oh [E7]careless love,\n[A7]See what careless love has [D7]done to [G]me.\n\nOnce I [G]wore my apron [G7]low,\n[C]Once I wore my apron [G]low,\nOnce I [G]wore my apron [E7]low,\nCouldn't [A7]keep you from my [D7]door, my [G]love.\n\nNow I [G]wear my apron [G7]high,\n[C]Now I wear my apron [G]high,\nNow I [G]wear my apron [E7]high,\nYou'll [A7]see my door and pass on [D7]by, my [G]love.",
+      "youtube": "https://www.youtube.com/results?search_query=careless+love+blues+guitar",
+      "license": "Public Domain (W.C. Handy arrangement 1921, traditional roots)",
+      "sample": false
+    },
+    {
+      "id": "pack-blues-cocaine-blues",
+      "title": "Cocaine Blues",
+      "artist": "Traditional",
+      "genre": "blues",
+      "chords": "C C7 F G7",
+      "lyrics": "[C]Early one morning while making my rounds,\nI took a [F]shot of cocaine, and I shot my woman [C]down.\nI went [G7]home and went to bed,\nStuck that [F]lovin' .44 beneath my [C]head.\n\n[C]Got up next mornin' and I grabbed that gun,\nTook a [F]shot of cocaine and away I [C]run,\nMade a [G7]good run but I run too slow,\nThey over[F]took me down in Juarez Mex[C]ico.",
+      "youtube": "https://www.youtube.com/results?search_query=cocaine+blues+traditional+guitar",
+      "license": "Public Domain (traditional, early 1900s)",
+      "sample": false
+    },
+    {
+      "id": "pack-blues-make-me-pallet",
+      "title": "Make Me a Pallet on the Floor",
+      "artist": "Traditional",
+      "genre": "blues",
+      "chords": "C C7 F G7",
+      "lyrics": "[C]Make me a pallet on your [C7]floor,\n[F]Make me a pallet on your [C]floor,\n[C]Make it soft, make it low,\n[D7]So my good gal will never [G7]know,\n[C]Make me a pallet on your [G7]floor.\n\nI'm [C]coming home, baby, on [C7]Christmas Day,\n[F]Coming home, baby, on Christmas [C]Day,\n[C]Coming home, baby, on Christmas Day,\n[D7]Then we'll laugh and dance and [G7]play,\n[C]Make me a pallet on your [G7]floor.",
+      "youtube": "https://www.youtube.com/results?search_query=make+me+a+pallet+on+the+floor+blues",
+      "license": "Public Domain (W.C. Handy 1923, traditional)",
+      "sample": false
+    },
+    {
+      "id": "pack-blues-cc-rider",
+      "title": "C.C. Rider (See See Rider)",
+      "artist": "Ma Rainey (Traditional)",
+      "genre": "blues",
+      "chords": "C F G7",
+      "lyrics": "[C]See see rider, see what you have [F]done,\n[C]See see rider, see what you have [F]done,\n[C]Made me love you, [G7]now your gal has [C]come.\n\n[C]I'm goin' away baby, won't be back till [F]fall,\n[C]Goin' away baby, won't be back till [F]fall,\n[C]If I find me a good gal, [G7]I won't be back at [C]all.\n\n[C]Buy me a pistol, just as long as [F]I am tall,\n[C]Gonna buy me a pistol, just as long as [F]I am tall,\n[C]Gonna shoot my baby, [G7]just to see her [C]fall.",
+      "youtube": "https://www.youtube.com/results?search_query=cc+rider+blues+guitar",
+      "license": "Public Domain (Ma Rainey 1924)",
+      "sample": false
+    }
+  ]
+}

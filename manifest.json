@@ -1,0 +1,41 @@
+{
+  "name": "OpenFret",
+  "short_name": "OpenFret",
+  "description": "Your personal guitar songbook. Bring your own songs. Runs in your browser.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "categories": ["music", "education", "productivity"],
+  "icons": [
+    {
+      "src": "assets/openfret-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/openfret-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/openfret-icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "assets/openfret-banner.jpg",
+      "sizes": "1599x900",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "OpenFret guitar songbook"
+    }
+  ]
+}

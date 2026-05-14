@@ -1,0 +1,96 @@
+{
+  "app": "OpenFret",
+  "version": 1,
+  "name": "Campfire Classics",
+  "description": "8 traditional campfire songs everyone knows. Three-chord-friendly, public domain.",
+  "songs": [
+    {
+      "id": "pack-campfire-leaving-cheyenne",
+      "title": "Goodbye, Old Paint",
+      "artist": "Traditional Cowboy",
+      "genre": "folk",
+      "chords": "G C D",
+      "lyrics": "[G]Goodbye, old paint, I'm a-[C]leavin' Chey[G]enne,\nGoodbye, old paint, I'm a-[D]leavin' Chey[G]enne.\nMy [G]horses ain't [C]hungry, they [G]won't eat your hay,\nSo [G]goodbye, old [D]paint, I'm a-leavin' Chey[G]enne.",
+      "youtube": "https://www.youtube.com/results?search_query=goodbye+old+paint+cowboy+song",
+      "license": "Public Domain (traditional, pre-1900)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-shell-be-coming",
+      "title": "She'll Be Coming 'Round the Mountain",
+      "artist": "Traditional",
+      "genre": "folk",
+      "chords": "C F G",
+      "lyrics": "She'll be [C]comin' 'round the mountain when she comes,\nShe'll be [F]comin' 'round the mountain when she [C]comes,\nShe'll be [C]comin' 'round the [F]mountain,\nShe'll be [C]comin' 'round the [G]mountain,\nShe'll be [C]comin' 'round the [G]mountain when she [C]comes.\n\nShe'll be [C]drivin' six white horses when she comes (yee-haw!),\nShe'll be [F]drivin' six white horses when she [C]comes (yee-haw!),\nShe'll be [C]drivin' six white [F]horses,\nShe'll be [C]drivin' six white [G]horses,\nShe'll be [C]drivin' six white [G]horses when she [C]comes (yee-haw!).",
+      "youtube": "https://www.youtube.com/results?search_query=shell+be+coming+round+the+mountain+guitar",
+      "license": "Public Domain (American folk, pre-1900)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-down-by-riverside",
+      "title": "Down by the Riverside",
+      "artist": "Traditional Spiritual",
+      "genre": "folk",
+      "chords": "G C D",
+      "lyrics": "Gonna [G]lay down my burden,\nDown by the [D]riverside,\nDown by the [G]riverside,\nDown by the [C]riverside.\nGonna [G]lay down my burden,\nDown by the [D]riverside,\nGonna [G]study [D]war no [G]more.\n\nI [G]ain't gonna study war no more,\nI [G]ain't gonna [D]study war no [G]more,\nI [G]ain't gonna study [C]war no [G]more.\nI [G]ain't gonna study war no more,\nI [G]ain't gonna [D]study war no [G]more,\nI [G]ain't gonna study [D]war no [G]more.",
+      "youtube": "https://www.youtube.com/results?search_query=down+by+the+riverside+guitar",
+      "license": "Public Domain (African-American spiritual, pre-Civil War)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-michael-row",
+      "title": "Michael, Row the Boat Ashore",
+      "artist": "Traditional Spiritual",
+      "genre": "folk",
+      "chords": "C F G Am",
+      "lyrics": "[C]Michael, row the [F]boat a[C]shore, halle[Am]lujah!\n[C]Michael, row the [F]boat a[C]shore, halle[G]lu[C]jah!\n\n[C]Sister, help to [F]trim the [C]sail, halle[Am]lujah!\n[C]Sister, help to [F]trim the [C]sail, halle[G]lu[C]jah!\n\n[C]Jordan's river is [F]chilly and [C]cold, halle[Am]lujah!\n[C]Chills the body but [F]not the [C]soul, halle[G]lu[C]jah!",
+      "youtube": "https://www.youtube.com/results?search_query=michael+row+the+boat+ashore+guitar",
+      "license": "Public Domain (African-American spiritual, 1860s)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-clementine",
+      "title": "Oh My Darling, Clementine",
+      "artist": "Traditional",
+      "genre": "folk",
+      "chords": "G D",
+      "lyrics": "In a [G]cavern, in a canyon,\nExcavating for a [D]mine,\nDwelt a miner, forty-niner,\nAnd his daughter Clemen[G]tine.\n\nOh my [G]darling, oh my darling,\nOh my darling Clemen[D]tine,\nThou art lost and gone forever,\nDreadful sorry, Clemen[G]tine.\n\nLight she [G]was and like a fairy,\nAnd her shoes were number [D]nine,\nHerring boxes without topses,\nSandals were for Clemen[G]tine.",
+      "youtube": "https://www.youtube.com/results?search_query=oh+my+darling+clementine+guitar",
+      "license": "Public Domain (American folk, 1884)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-red-river-valley",
+      "title": "Red River Valley",
+      "artist": "Traditional",
+      "genre": "folk",
+      "chords": "G C D",
+      "lyrics": "From this [G]valley they [C]say you are [G]going,\nWe will [G]miss your bright [D]eyes and sweet [G]smile,\nFor they [G]say you are [C]taking the [G]sunshine,\nThat has [G]brightened our [D]pathway a[G]while.\n\nCome and [G]sit by my [C]side if you [G]love me,\nDo not [G]hasten to [D]bid me a[G]dieu,\nJust re[G]member the [C]Red River [G]Valley,\nAnd the [G]cowboy who [D]loved you so [G]true.",
+      "youtube": "https://www.youtube.com/results?search_query=red+river+valley+guitar",
+      "license": "Public Domain (Canadian/American folk, late 1800s)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-home-on-range",
+      "title": "Home on the Range",
+      "artist": "Traditional",
+      "genre": "folk",
+      "chords": "G C D D7",
+      "lyrics": "Oh, [G]give me a home where the [C]buffalo [G]roam,\nWhere the [Em]deer and the [A7]antelope [D]play,\nWhere [G]seldom is heard a dis[C]couraging [G]word,\nAnd the [Em]skies are not [D7]cloudy all [G]day.\n\n[G]Home, [D7]home on the [G]range,\nWhere the [C]deer and the [G]antelope [D7]play,\nWhere [G]seldom is heard a dis[C]couraging [G]word,\nAnd the [Em]skies are not [D7]cloudy all [G]day.",
+      "youtube": "https://www.youtube.com/results?search_query=home+on+the+range+guitar",
+      "license": "Public Domain (lyrics 1873)",
+      "sample": false
+    },
+    {
+      "id": "pack-campfire-shenandoah",
+      "title": "Shenandoah",
+      "artist": "Traditional",
+      "genre": "folk",
+      "chords": "G C D Em",
+      "lyrics": "Oh [G]Shenan[Em]doah, I [C]long to [G]hear you,\n[G]Away, you [Em]rolling [D]river.\nOh [G]Shenan[Em]doah, I [C]long to [G]hear you,\n[G]Away, I'm [D]bound away,\n'Cross the [C]wide Mis[D]sou[G]ri.\n\nOh [G]Shenan[Em]doah, I [C]love your [G]daughter,\n[G]Away, you [Em]rolling [D]river.\nFor [G]her I'd [Em]cross your [C]roaming [G]waters,\n[G]Away, I'm [D]bound away,\n'Cross the [C]wide Mis[D]sou[G]ri.",
+      "youtube": "https://www.youtube.com/results?search_query=shenandoah+folk+song+guitar",
+      "license": "Public Domain (American folk, early 1800s)",
+      "sample": false
+    }
+  ]
+}

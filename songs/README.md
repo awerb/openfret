@@ -1,11 +1,45 @@
-# Optional songs/ folder
+# Starter packs
 
-This folder is intentionally empty. You don't need it for normal use.
+This folder contains curated, importable song collections you can load into your library with one tap from inside the app: **Library → Browse Starter Packs**.
 
-If you'd rather keep your songs as JSON files in your repository (so you can version-control them with git), you can use this folder as a holding place. To actually load JSON files from this folder you'll need to write a small loader, since OpenFret is a static app and can't read your local filesystem at runtime.
+Every song in every pack is verifiably public domain in the United States. Each entry includes a `license` field with the source attribution.
 
-The recommended way to add songs is through the in-browser **+ Add Song** button. To back them up or move them to another device, use **Library → Export to file** which produces a single JSON file you can save anywhere.
+## Included packs
 
-## Roadmap
+- **`campfire-classics.json`** — 8 traditional campfire songs everyone knows. Three-chord-friendly.
+- **`blues-101.json`** — 6 foundational blues and early jazz numbers. Perfect for learning the 12-bar form and dominant 7th voicings.
+- **`holiday-classics.json`** — 6 traditional Christmas carols. Great for group singing in December.
 
-A future release may include an optional drop-in loader that scans this folder at build time. Until then, treat this folder as a personal scratch space if you find it useful, or delete it.
+## Format
+
+Each file is an OpenFret library export. Same shape as the file you'd get from **Library → Export to file**:
+
+```json
+{
+  "app": "OpenFret",
+  "version": 1,
+  "name": "Pack name",
+  "description": "What's in this pack.",
+  "songs": [
+    {
+      "id": "unique-id",
+      "title": "Song Title",
+      "artist": "Artist or Traditional",
+      "genre": "folk | blues | jazz | rock | country | pop | other",
+      "chords": "G C D Em",
+      "lyrics": "[G]Lyrics with [D]chord brackets",
+      "youtube": "https://www.youtube.com/results?search_query=...",
+      "license": "Public Domain (...)",
+      "sample": false
+    }
+  ]
+}
+```
+
+## Contributing a pack
+
+PRs welcome. Three rules:
+
+1. Every song must be verifiably public domain in the US (composed pre-1929 or traditional with no known author).
+2. Each song must include a `license` field explaining why.
+3. Include a `name` and `description` at the top of the JSON.

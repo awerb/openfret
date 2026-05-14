@@ -10,6 +10,13 @@
     <link rel="icon" type="image/png" href="assets/openfret-icon.png">
     <link rel="apple-touch-icon" href="assets/openfret-icon.png">
 
+    <!-- PWA -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="OpenFret">
+
     <!-- Open Graph / Twitter social card -->
     <meta property="og:title" content="OpenFret">
     <meta property="og:description" content="Your guitar. Your songs. Your phone. No accounts. No ads. No monthly fee.">
@@ -41,7 +48,12 @@
     </div>
 
     <div class="header">
-        <h1 onclick="showSongList()" style="cursor: pointer;">OPENFRET</h1>
+        <h1 onclick="showSongList()" style="cursor: pointer;" aria-label="OpenFret">
+            <picture>
+                <source srcset="assets/openfret-wordmark.webp" type="image/webp">
+                <img src="assets/openfret-wordmark.png" alt="OpenFret" class="header-wordmark" width="600" height="171">
+            </picture>
+        </h1>
         <div class="nav-tabs">
             <button class="nav-tab active" id="songsTab" onclick="showTab('songs')">SONGS</button>
             <button class="nav-tab" id="scalesTab" onclick="showTab('scales')">SCALES</button>
@@ -219,6 +231,11 @@ E|--15--17---|
                 <button class="close-btn" onclick="closeLibraryMenu()" aria-label="Close">×</button>
             </div>
             <div class="of-library-stats" id="libraryStats"></div>
+
+            <h4 class="of-section-heading">STARTER PACKS</h4>
+            <div class="of-pack-list" id="packList"></div>
+
+            <h4 class="of-section-heading">YOUR LIBRARY</h4>
             <div class="of-library-actions">
                 <button class="control-btn" onclick="OpenFretApp.exportLibrary()">EXPORT TO FILE</button>
                 <label class="control-btn file-input-btn">

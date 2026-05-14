@@ -1,0 +1,74 @@
+{
+  "app": "OpenFret",
+  "version": 1,
+  "name": "Holiday Classics",
+  "description": "6 traditional Christmas carols, all public domain. Three-chord arrangements for easy group singing.",
+  "songs": [
+    {
+      "id": "pack-holiday-silent-night",
+      "title": "Silent Night",
+      "artist": "Franz Gruber",
+      "genre": "folk",
+      "chords": "C G7 F",
+      "lyrics": "[C]Silent night, holy night,\n[G7]All is calm, [C]all is bright,\n[F]Round yon Virgin, [C]Mother and Child,\n[F]Holy Infant so [C]tender and mild,\n[G7]Sleep in heavenly [C]peace,\n[C]Sleep in [G7]heavenly [C]peace.\n\n[C]Silent night, holy night,\n[G7]Shepherds quake [C]at the sight,\n[F]Glories stream from [C]heaven afar,\n[F]Heavenly hosts sing [C]Alleluia,\n[G7]Christ the Savior is [C]born,\n[C]Christ the [G7]Savior is [C]born.",
+      "youtube": "https://www.youtube.com/results?search_query=silent+night+guitar+chords",
+      "license": "Public Domain (1818)",
+      "sample": false
+    },
+    {
+      "id": "pack-holiday-jingle-bells",
+      "title": "Jingle Bells",
+      "artist": "James Lord Pierpont",
+      "genre": "folk",
+      "chords": "G C D7",
+      "lyrics": "[G]Dashing through the snow, in a one horse open sleigh,\n[C]O'er the fields we [G]go, laughing all the [D7]way.\n[G]Bells on bobtails ring, making spirits bright,\n[C]Oh what fun it [G]is to ride and [D7]sing a sleighing song to[G]night, oh!\n\n[G]Jingle bells, jingle bells, jingle all the way,\n[C]Oh what fun it [G]is to ride in a [A7]one horse open [D7]sleigh, oh!\n[G]Jingle bells, jingle bells, jingle all the way,\n[C]Oh what fun it [G]is to ride in a [D7]one horse open [G]sleigh.",
+      "youtube": "https://www.youtube.com/results?search_query=jingle+bells+guitar+chords",
+      "license": "Public Domain (1857)",
+      "sample": false
+    },
+    {
+      "id": "pack-holiday-deck-the-halls",
+      "title": "Deck the Halls",
+      "artist": "Traditional Welsh",
+      "genre": "folk",
+      "chords": "G C D7 Em",
+      "lyrics": "[G]Deck the halls with [D]boughs of [G]holly,\n[D]Fa la la la [G]la, la la [D7]la [G]la.\n[G]'Tis the season [D]to be [G]jolly,\n[D]Fa la la la [G]la, la la [D7]la [G]la.\n[D]Don we [G]now our [D]gay ap[G]parel,\n[Em]Fa la la, [Am]la la la, [D7]la la [G]la.\n[G]Troll the ancient [D]Yuletide [G]carol,\n[D]Fa la la la [G]la, la la [D7]la [G]la.\n\n[G]See the blazing [D]Yule before [G]us,\n[D]Fa la la la [G]la, la la [D7]la [G]la.\n[G]Strike the harp and [D]join the [G]chorus,\n[D]Fa la la la [G]la, la la [D7]la [G]la.",
+      "youtube": "https://www.youtube.com/results?search_query=deck+the+halls+guitar+chords",
+      "license": "Public Domain (16th century Welsh melody)",
+      "sample": false
+    },
+    {
+      "id": "pack-holiday-we-three-kings",
+      "title": "We Three Kings",
+      "artist": "John Henry Hopkins Jr.",
+      "genre": "folk",
+      "chords": "Em D C G B7",
+      "lyrics": "[Em]We three kings of [B7]Orient [Em]are,\n[Am]Bearing gifts we [Em]traverse a[B7]far.\n[G]Field and [D]fountain, [G]moor and [D]mountain,\n[Am]Following [B7]yonder [Em]star.\n\n[G]O star of [C]wonder, [G]star of [D]night,\n[G]Star with royal [C]beauty [D]bright,\n[G]Westward [Em]leading, [G]still pro[Em]ceeding,\n[Am]Guide us to thy [B7]perfect [Em]light.",
+      "youtube": "https://www.youtube.com/results?search_query=we+three+kings+guitar+chords",
+      "license": "Public Domain (1857)",
+      "sample": false
+    },
+    {
+      "id": "pack-holiday-good-king-wenceslas",
+      "title": "Good King Wenceslas",
+      "artist": "John Mason Neale",
+      "genre": "folk",
+      "chords": "G C D Em",
+      "lyrics": "[G]Good King Wencel[D]as looked [G]out,\nOn the [C]feast of [D]Stephen,\n[G]When the snow lay [D]round a[G]bout,\nDeep and [C]crisp and [D]even.\n[Em]Brightly shone the [D]moon that [Em]night,\nThough the [Am]frost was [D]cruel,\n[G]When a poor man [D]came in [Em]sight,\nGath'ring [C]winter [D]fu[G]el.\n\n[G]\"Hither, page, and [D]stand by [G]me,\nIf thou [C]know'st it, [D]telling,\n[G]Yonder peasant, [D]who is [G]he?\nWhere and [C]what his [D]dwelling?\"\n[Em]\"Sire, he lives a [D]good league [Em]hence,\nUnder[Am]neath the [D]mountain,\n[G]Right against the [D]forest [Em]fence,\nBy Saint [C]Agnes' [D]foun[G]tain.\"",
+      "youtube": "https://www.youtube.com/results?search_query=good+king+wenceslas+guitar",
+      "license": "Public Domain (1853)",
+      "sample": false
+    },
+    {
+      "id": "pack-holiday-first-noel",
+      "title": "The First Noel",
+      "artist": "Traditional English",
+      "genre": "folk",
+      "chords": "G D Em C",
+      "lyrics": "The [G]first No[Em]el the [D]angel did [G]say,\nWas to [C]certain poor [G]shepherds in [D]fields as they [G]lay.\nIn [G]fields where [Em]they lay [D]keeping their [G]sheep,\nOn a [C]cold winter's [G]night that [D]was so [G]deep.\n\nNo[G]el, No[D]el, No[Em]el, No[D]el,\n[G]Born is the [D]King of [Em]Is[D]ra[G]el.\n\nThey [G]looked [Em]up and [D]saw a [G]star,\nShining [C]in the [G]east, be[D]yond them [G]far.\nAnd [G]to the [Em]earth it [D]gave great [G]light,\nAnd [C]so it con[G]tinued [D]both day and [G]night.",
+      "youtube": "https://www.youtube.com/results?search_query=the+first+noel+guitar+chords",
+      "license": "Public Domain (Cornish, 18th century)",
+      "sample": false
+    }
+  ]
+}

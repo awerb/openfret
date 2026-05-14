@@ -30,8 +30,41 @@ test("index.html loads extracted stylesheet and scripts", () => {
 test("index.html uses the OpenFret brand", () => {
   const html = read(indexPath);
   assert.match(html, /<title>OpenFret<\/title>/);
-  assert.match(html, /OPENFRET/);
+  // Brand surfaces as either the OPENFRET wordmark image or the text aria-label
+  assert.match(html, /OpenFret|OPENFRET/);
   assert.doesNotMatch(html, /Werbach/i);
+});
+
+test("index.html ships PWA + Open Graph wiring", () => {
+  const html = read(indexPath);
+  assert.match(html, /<link rel="manifest" href="manifest\.json">/);
+  assert.match(html, /apple-mobile-web-app-capable/);
+  assert.match(html, /og:image/);
+  // Service worker is registered from JS, not directly in HTML
+  const onboarding = read(onboardingPath);
+  assert.match(onboarding, /serviceWorker/, "service worker must be registered");
+});
+
+test("manifest.json is valid and references the icon", () => {
+  const manifest = JSON.parse(read(path.join(root, "manifest.json")));
+  assert.equal(manifest.name, "OpenFret");
+  assert.ok(Array.isArray(manifest.icons) && manifest.icons.length > 0);
+  manifest.icons.forEach(i => assert.ok(i.src.includes("openfret-icon")));
+});
+
+test("starter pack JSON files are valid", () => {
+  const songsDir = path.join(root, "songs");
+  const files = fs.readdirSync(songsDir).filter(f => f.endsWith(".json"));
+  assert.ok(files.length >= 3, `expected at least 3 packs, found ${files.length}`);
+  files.forEach(file => {
+    const pack = JSON.parse(read(path.join(songsDir, file)));
+    assert.ok(pack.name, `${file} must have a name`);
+    assert.ok(Array.isArray(pack.songs) && pack.songs.length > 0, `${file} must have songs`);
+    pack.songs.forEach(s => {
+      assert.ok(s.title, `${file}: every song needs a title`);
+      assert.ok(s.license && /public domain/i.test(s.license), `${file}: every song must be PD`);
+    });
+  });
 });
 
 test("stylesheet contains key app sections", () => {

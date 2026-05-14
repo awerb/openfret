@@ -50,4 +50,14 @@
     window.closeHelpModal = closeHelpModal;
 
     document.addEventListener('DOMContentLoaded', showBannerIfNeeded);
+
+    // Register service worker for offline + install-to-home-screen support.
+    // Only runs when served over HTTPS or localhost (browser security rule).
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+            navigator.serviceWorker.register('./service-worker.js').catch(function (err) {
+                console.warn('OpenFret service worker registration failed:', err);
+            });
+        });
+    }
 })();
