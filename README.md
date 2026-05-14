@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/openfret-wordmark.png" alt="OpenFret" width="420">
+</p>
+
+<p align="center">
   <img src="assets/openfret-banner.jpg" alt="OpenFret — your personal guitar songbook" width="100%">
 </p>
 

@@ -2473,6 +2473,15 @@
     margin: 0 auto;
 }
 
+.empty-state-wordmark {
+    display: block;
+    height: 40px;
+    width: auto;
+    max-width: 70%;
+    margin: 0 auto 18px;
+    user-select: none;
+}
+
 .empty-state-icon {
     width: 120px;
     height: 120px;

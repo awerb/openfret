@@ -31,6 +31,13 @@
   ],
   "screenshots": [
     {
+      "src": "assets/openfret-screenshot-wordmark.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "OpenFret — your personal guitar songbook"
+    },
+    {
       "src": "assets/openfret-banner.jpg",
       "sizes": "1599x900",
       "type": "image/jpeg",

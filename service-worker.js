@@ -9,7 +9,7 @@
  *
  * Bump CACHE_VERSION whenever you ship a release that changes any cached file.
  */
-const CACHE_VERSION = 'openfret-v2';
+const CACHE_VERSION = 'openfret-v3';
 const APP_SHELL = [
     './',
     './index.html',

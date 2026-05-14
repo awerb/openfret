@@ -689,6 +689,10 @@
             if (songs.length === 0) {
                 songListEl.innerHTML = `
                     <div class="empty-state">
+                        <picture>
+                            <source srcset="assets/openfret-wordmark.webp" type="image/webp">
+                            <img src="assets/openfret-wordmark.png" alt="OpenFret" class="empty-state-wordmark">
+                        </picture>
                         <img src="assets/openfret-icon.png" alt="" class="empty-state-icon">
                         <h3>Your songbook is empty.</h3>
                         <p>Tap <strong>+ Add Song</strong> to drop in your first chord sheet, browse a starter pack to get going fast, or import a library you've exported from another device.</p>
