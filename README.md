@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/openfret-banner.png" alt="OpenFret — your personal guitar songbook" width="100%">
+  <img src="assets/openfret-banner.jpg" alt="OpenFret — your personal guitar songbook" width="100%">
 </p>
 
 # OpenFret
@@ -79,18 +79,18 @@ The whole app is plain HTML, CSS, and JavaScript. No build step. No npm install.
 </details>
 
 <p align="center">
-  <img src="assets/openfret-banner-electric.png" alt="OpenFret — Pacific Coast Highway, est. 1977" width="100%">
+  <img src="assets/openfret-banner-electric.jpg" alt="OpenFret — Pacific Coast Highway, est. 1977" width="100%">
 </p>
 
 ## Customize the look
 
-- **Header image**: replace `assets/openfret-banner.png` with your own. The included assets folder also contains `openfret-banner-electric.png` and `openfret-poster.png` if you want a different vibe.
+- **Header image**: replace `assets/openfret-banner.jpg` with your own. The included assets folder also contains `openfret-banner-electric.jpg` and `openfret-poster.jpg` if you want a different vibe.
 - **Title and tagline**: edit the `<title>` and `<h1>` in `index.html`.
 - **Colors**: theme tokens live near the top of `styles/main.css`. The default is a high-contrast dark theme.
 - **Tabs**: remove a tab by deleting its `<button class="nav-tab">` in `index.html` and the corresponding section.
 
 <p align="center">
-  <img src="assets/openfret-poster.png" alt="OpenFret poster — your personal guitar songbook" width="60%">
+  <img src="assets/openfret-poster.jpg" alt="OpenFret poster — your personal guitar songbook" width="60%">
 </p>
 
 ## Project layout
